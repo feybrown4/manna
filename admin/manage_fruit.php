@@ -11,6 +11,9 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <!-- datatable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.css" />
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +59,7 @@
                     <a href="index.php" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <a href="manage_admin.php" class="nav-item nav-link"><i class="fa fa-users me-2"></i>Manage</a>
                     <a href="manage_category.php" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Category</a>
-                    <a href="manage_fruit.php.php" class="nav-item nav-link active"><i class="fa fa-carrot me-2"></i>Fruit</a>
+                    <a href="manage_fruit.php" class="nav-item nav-link active"><i class="fa fa-carrot me-2"></i>Fruit</a>
                     <a href="manage_order.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Order</a>
                 </div>
             </nav>
@@ -109,7 +112,7 @@
                     <div class="bg-light rounded h-100 p-4">
                         <h6 class="mb-4">Fruit Table</h6>
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table" id="myTable">
                                 <thead>
                                     <tr>
                                         <th scope="col">#S.N</th>
@@ -182,15 +185,19 @@
                                         }
                                     } else {
                                         ?>
-
+                                        <tr>
+                                            <td>
+                                                <h1 class="mb-4">No record Found</h1>
+                                            </td>
+                                        </tr>
 
                                         <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
                                             <div class="col-md-6 text-center p-4">
-                                                <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                                                <h1 class="display-1 fw-bold">404</h1>
-                                                <h1 class="mb-4">No record Found</h1>
-                                                <p class="mb-4">There is no record created, Please click on the button to add a category</p>
-                                                <a class="btn btn-success rounded-pill py-3 px-5" href="add_category.php">Go To Add Category</a>
+                                                <!-- <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                                                <h1 class="display-1 fw-bold">404</h1> -->
+
+                                                <p class="mb-4">There is no record created, Please click on the button to add a fruit</p>
+                                                <a class="btn btn-success rounded-pill py-3 px-5" href="add_fruit.php">Go To Add Fruit</a>
                                             </div>
                                         </div>
 
@@ -242,6 +249,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.3/js/dataTables.js"></script>
     <script src="lib/chart/chart.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -249,6 +257,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -272,6 +281,7 @@
     <script>
         $(document).ready(function() {
             document.getElementById("spinner").style.display = "none";
+            $('#myTable').DataTable();
             setTimeout(function() {
                 $("#alert").fadeOut("slow", function() {
                     $(this).remove();

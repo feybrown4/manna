@@ -138,6 +138,12 @@
                                         <input class="form-control" type="file" name="image">
                                     </div>
                                 </div>
+
+                                <div class="form-floating mb-3 row">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea" name="description" style="height: 150px;"></textarea>
+                                    <label for="floatingTextarea">Comments</label>
+                                </div>
                                 <input type="submit" name="submit" value="Add" class="btn btn-success px-3">
                             </form>
                         </div>
@@ -163,6 +169,7 @@
 
         if (isset($_POST['submit'])) {
             $title = $_POST['title'];
+            $description = $_POST['description'];
             if (isset($_POST['featured'])) {
                 $featured = $_POST['featured'];
             } else {
@@ -204,7 +211,7 @@
             }
 
             // Combine checks for email and username in a single query
-            $sql = "INSERT INTO category SET title='$title', feature='$featured', image_name='$image_name', active='$active'";
+            $sql = "INSERT INTO category SET title='$title', feature='$featured', comment = '$description',  image_name='$image_name', active='$active'";
             $res = mysqli_query($con, $sql);
 
             // Check whether data was inserted

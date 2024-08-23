@@ -83,6 +83,7 @@
 
                         $row = mysqli_fetch_assoc($res);
                         $title = $row['title'];
+                        $description = $row['comment'];
                         $current_image = $row['image_name'];
                         $featured = $row['feature'];
                         $active = $row['active'];
@@ -106,8 +107,8 @@
                     <div class="col-sm-12 col-xl-6 pt-4">
                         <div class="bg-light rounded h-100 p-4">
                             <div class="mb-4">
-                                <h6>Add Category</h6>
-                                <span class="form-text">Fill out the form to create category</span>
+                                <h6>Update Category</h6>
+                                <span class="form-text">Fill out the form to update category</span>
                             </div>
                             <form action="" method="POST" enctype="multipart/form-data">
                                 <div class="row mb-3">
@@ -176,9 +177,14 @@
                                         <input class="form-control" type="file" name="image">
                                     </div>
                                 </div>
+                                <div class="form-floating mb-3 row">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea" name="description" style="height: 150px;"><?php echo  $description ?></textarea>
+                                    <label for="floatingTextarea">Comments</label>
+                                </div>
                                 <input type="hidden" name="current_image" value="<?php echo $current_image ?>">
                                 <input type="hidden" name="id" value="<?php echo $id ?>">
-                                <input type="submit" name="submit" value="Add" class="btn btn-success px-3">
+                                <input type="submit" name="submit" value="Update" class="btn btn-warning px-3">
                             </form>
                         </div>
                     </div>
@@ -204,6 +210,7 @@
         if (isset($_POST['submit'])) {
             $id = $_POST['id'];
             $title = $_POST['title'];
+            $description = $_POST['description'];
             $current_image = $_POST['current_image'];
             $featured = $_POST['featured'];
             $active = $_POST['active'];
@@ -266,6 +273,7 @@
                 title = '$title',
                 feature = '$featured',
                 active = '$active',
+                comment=  '$description',
                 image_name = '$image_name'
                 where id=$id";
     

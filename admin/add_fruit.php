@@ -53,7 +53,7 @@
                     <a href="index.php" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <a href="manage_admin.php" class="nav-item nav-link"><i class="fa fa-users me-2"></i>Manage</a>
                     <a href="manage_category.php" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Category</a>
-                    <a href="manage_fruit.php.php" class="nav-item nav-link active"><i class="fa fa-carrot me-2"></i>Fruits</a>
+                    <a href="manage_fruit.php" class="nav-item nav-link active"><i class="fa fa-carrot me-2"></i>Fruits</a>
                     <a href="manage_order.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Order</a>
                 </div>
             </nav>

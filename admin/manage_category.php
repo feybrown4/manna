@@ -185,12 +185,15 @@
                                     } else {
                                         ?>
 
+<tr>
+                                             <td><h1 class="mb-4">No record Found</h1></td>
+                                             </tr>
 
                                         <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
                                             <div class="col-md-6 text-center p-4">
-                                                <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                                                <!-- <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
                                                 <h1 class="display-1 fw-bold">404</h1>
-                                                <h1 class="mb-4">No record Found</h1>
+                                                <h1 class="mb-4">No record Found</h1> -->
                                                 <p class="mb-4">There is no record created, Please click on the button to add a category</p>
                                                 <a class="btn btn-success rounded-pill py-3 px-5" href="add_category.php">Go To Add Category</a>
                                             </div>
