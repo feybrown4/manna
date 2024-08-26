@@ -271,7 +271,7 @@ include('../connect.php');
                                     </div>
                                 </div>
                             <?php endwhile; ?>
-                            <div class="col-12 text-center">
+                            <div class="col-12 col-md-8 col-sm-8">
                                 <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
                             </div>
                         </div>
@@ -410,10 +410,10 @@ include('../connect.php');
                     <h1 class="fw-bold text-primary mb-4">F<span class="text-secondary">oo</span>dy</h1>
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://x.com/FeyBrown4" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://www.facebook.com/nkem.owhuo.7/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://www.instagram.com/feybrown4/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href="https://www.linkedin.com/in/nkem-owhuo-969801162/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -448,9 +448,9 @@ include('../connect.php');
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By <a href="https://htmlcodex.com" target="_blank">HTML Codex</a>
                         <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                        <br>Site Developed By: <a href="https://themewagon.com" target="_blank">Nkem Owhuo</a>
+                        <br>Site Developed By: <a href="https://nkemowhuo.netlify.app/" target="_blank">Nkem Owhuo</a>
                     </div>
                 </div>
             </div>
