@@ -17,7 +17,7 @@ if(isset($_GET['id']) AND isset($_GET['image_name'])){
         Failed to delete fruit image                            
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
        </div>';
-       header('location:'.SITEURL.'/admin/manage_fruit.php');
+       header('location:'.SITE_URL.'/admin/manage_fruit.php');
        exit();
     }
     
@@ -37,16 +37,16 @@ if ($res == true) {
                              Fruit deleted Successfully                               
                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>';
-    header('location:'.SITEURL.'/admin/manage_fruit.php');
+    header('location:'.SITE_URL.'/admin/manage_fruit.php');
 } else {
     $_SESSION['delete'] = ' <div class="alert alert-danger alert-dismissible fade show" id="alert" role="alert">
                            Failed to delete fruit 
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>';
-    header('location:'.SITEURL.'/admin/manage_fruit.php');
+    header('location:'.SITE_URL.'/admin/manage_fruit.php');
 }
 }else{
-    header('location:'.SITEURL.'/admin/manage_fruit.php');
+    header('location:'.SITE_URL.'/admin/manage_fruit.php');
 }
 
 ?>

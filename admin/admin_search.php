@@ -162,7 +162,7 @@
                                                     if ($image_name != "") {
                                                     ?>
 
-                                                        <img src="<?php echo SITEURL; ?>../admin/img/fruit/<?php echo $image_name; ?>" width="100px" height="100px" alt="">
+                                                        <img src="<?php echo SITE_URL; ?>../admin/img/fruit/<?php echo $image_name; ?>" width="100px" height="100px" alt="">
                                                     <?php
 
                                                     } else {
@@ -175,7 +175,7 @@
                                                 <td><?php echo $active; ?></td>
 
                                                 <td>
-                                                    <a class="btn btn-sm my-2 btn-success me-2" href="<?php echo SITEURL; ?>/admin/update_fruit.php?id=<?php echo $id; ?>">Update</a>
+                                                    <a class="btn btn-sm my-2 btn-success me-2" href="<?php echo SITE_URL; ?>/admin/update_fruit.php?id=<?php echo $id; ?>">Update</a>
                                                     <a class="btn my-2 btn-sm btn-danger" onclick="confirmDelete('<?php echo $id; ?>&image_name=<?php echo $image_name; ?>')">Delete</a>
                                                 </td>
                                             </tr>

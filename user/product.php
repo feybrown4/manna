@@ -112,7 +112,7 @@ include('../connect.php');
                                 <div class="col-xl-3 col-lg-4 col-md-6">
                                     <div class="product-item">
                                         <div class="position-relative bg-light overflow-hidden">
-                                            <img style="height: 200px; min-width: 100%" class="img-fluid" src="<?php echo SITEURL ?>../admin/img/fruit/<?php echo $product['image_name']; ?>" alt="">
+                                            <img style="height: 200px; min-width: 100%" class="img-fluid" src="<?php echo SITE_URL ?>../admin/img/fruit/<?php echo $product['image_name']; ?>" alt="">
                                             <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                         </div>
                                         <div class="text-center p-4">

@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="<?php echo SITEURL ?>/user/index.php" class="nav-item nav-link active">Home</a>
+                    <a href="<?php echo SITE_URL ?>/user/index.php" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="category.php" class="nav-item nav-link">Categories</a>
                     <a href="product.php" class="nav-item nav-link">Products</a>

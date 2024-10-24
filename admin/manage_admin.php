@@ -172,8 +172,8 @@
                                                     <td><?php echo $username; ?></td>
                                                     <td><?php echo $email; ?></td>
                                                     <td>
-                                                        <a class="btn btn-sm my-2 btn-success me-2" href="<?php echo SITEURL; ?>/admin/update_admin.php?id=<?php echo $id; ?>">Update</a>
-                                                        <a class="btn btn-sm my-2 btn-warning me-2" href="<?php echo SITEURL; ?>/admin/reset_admin_password.php?id=<?php echo $id; ?>">Reset</a>
+                                                        <a class="btn btn-sm my-2 btn-success me-2" href="<?php echo SITE_URL; ?>/admin/update_admin.php?id=<?php echo $id; ?>">Update</a>
+                                                        <a class="btn btn-sm my-2 btn-warning me-2" href="<?php echo SITE_URL; ?>/admin/reset_admin_password.php?id=<?php echo $id; ?>">Reset</a>
                                                         <a class="btn my-2 btn-sm btn-danger" onclick="confirmDelete('<?php echo $id; ?>')">Delete</a>
                                                     </td>
                                                 </tr>

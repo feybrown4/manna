@@ -17,13 +17,13 @@ if ($res == true) {
                              Admin deleted Successfully                               
                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>';
-    header('location:'.SITEURL.'/admin/manage_admin.php');
+    header('location:'.SITE_URL.'/admin/manage_admin.php');
 } else {
     $_SESSION['delete'] = ' <div class="alert alert-danger alert-dismissible fade show" id="alert" role="alert">
                            Failed to delete Admin 
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>';
-    header('location:'.SITEURL.'/admin/manage_admin.php');
+    header('location:'.SITE_URL.'/admin/manage_admin.php');
 }
 
 ?>

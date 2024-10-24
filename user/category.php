@@ -87,7 +87,7 @@ include('../connect.php');
                                     } else {
                                     ?>
                                         
-                                        <img class="img-fluid mb-4" src="<?php echo SITEURL ?>../admin/img/category/<?php echo $image_name ?>" style="height: 60px; width:60px" alt="Category Image">
+                                        <img class="img-fluid mb-4" src="<?php echo SITE_URL ?>../admin/img/category/<?php echo $image_name ?>" style="height: 60px; width:60px" alt="Category Image">
                                         
                                         <h4 class="mb-3"><?php echo $title ?></h4>
                                         <p class="mb-4"><?php echo $description ?></p>

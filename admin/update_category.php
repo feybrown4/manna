@@ -157,7 +157,7 @@
                                             if ($current_image  != "") {
 
                                             ?>
-                                                <img src="<?php SITEURL; ?>img/category/<?php echo $current_image ?>" alt="category image" class="w-50 h-50">
+                                                <img src="<?php SITE_URL; ?>img/category/<?php echo $current_image ?>" alt="category image" class="w-50 h-50">
 
                                             <?php
 
@@ -253,7 +253,7 @@
                             Failed to remove category current image                            
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                            </div>';
-                            header('location:' . SITEURL . '/admin/manage_category.php');
+                            header('location:' . SITE_URL . '/admin/manage_category.php');
                             
                         }
                         

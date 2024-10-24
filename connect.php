@@ -3,7 +3,7 @@
 //start session
 session_start();
 
-define('SITEURL', 'http://localhost/manna');
+define('SITE_URL', 'http://localhost/manna');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');

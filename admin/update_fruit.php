@@ -208,7 +208,7 @@
                                         if ($current_image  != "") {
 
                                         ?>
-                                            <img src="<?php SITEURL; ?>img/fruit/<?php echo $current_image ?>" alt="Fruit image" class="w-50 h-50">
+                                            <img src="<?php SITE_URL; ?>img/fruit/<?php echo $current_image ?>" alt="Fruit image" class="w-50 h-50">
 
                                         <?php
 

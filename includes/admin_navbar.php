@@ -9,7 +9,7 @@ include('../connect.php');
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars" style="color:#41BA1B"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4" action="<?php echo SITEURL; ?>../admin/admin_search.php" method="POST">
+                <form class="d-none d-md-flex ms-4" action="<?php echo SITE_URL; ?>../admin/admin_search.php" method="POST">
                     <input class="form-control border-0" type="search" placeholder="Search" >
                 </form>
                 <div class="navbar-nav align-items-center ms-auto">
