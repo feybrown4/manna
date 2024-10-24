@@ -17,7 +17,7 @@ include('../connect.php');
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -42,8 +42,8 @@ include('../connect.php');
     <!-- Spinner End -->
 
 
-   <!-- Navbar Start -->
-   <?php
+    <!-- Navbar Start -->
+    <?php
     include('../includes/userNavbar.php');
     ?>
     <!-- Navbar End -->
@@ -73,11 +73,11 @@ include('../connect.php');
                 <div class="col-lg-6">
                     <div class="section-header text-start mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                         <h1 class="display-5 mb-3">Our Products</h1>
-                        <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                        <p>Experience the diverse world of fruits. From sweet berries and juicy stone fruits to zesty citrus and refreshing tropical varieties, there's a fruit for every taste and occasion. Perfect for snacking, cooking, and adding natural goodness to your meals.</p>
                     </div>
                 </div>
                 <?php
-                $sql2 = "SELECT * FROM category WHERE active = 'Yes' AND feature = 'Yes' ORDER BY RAND() LIMIT 4";
+                $sql2 = "SELECT * FROM category WHERE active = 'Yes' ORDER BY RAND() LIMIT 4";
                 $res2 = mysqli_query($con, $sql2);
                 $categories = [];
                 while ($row2 = mysqli_fetch_assoc($res2)) {
@@ -112,7 +112,7 @@ include('../connect.php');
                                 <div class="col-xl-3 col-lg-4 col-md-6">
                                     <div class="product-item">
                                         <div class="position-relative bg-light overflow-hidden">
-                                            <img style="height: 200px; min-width: 100%"  class="img-fluid" src="<?php echo SITEURL ?>../admin/img/fruit/<?php echo $product['image_name']; ?>"  alt="" >
+                                            <img style="height: 200px; min-width: 100%" class="img-fluid" src="<?php echo SITEURL ?>../admin/img/fruit/<?php echo $product['image_name']; ?>" alt="">
                                             <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                         </div>
                                         <div class="text-center p-4">
@@ -131,13 +131,15 @@ include('../connect.php');
                                     </div>
                                 </div>
                             <?php endwhile; ?>
-                            <div class="col-12 col-md-8 col-sm-8">
-                                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
-                            </div>
+
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
+
+        </div>
+        <div class="col-12 mt-4">
+            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
         </div>
     </div>
     <!-- Product End -->
